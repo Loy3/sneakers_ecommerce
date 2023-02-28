@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <title>E-commerce product page</title>
+
+    <link rel="stylesheet" href="./styles/checkout_style.css">
+
+    <script src="./js/checkout_js.js"></script>
+</head>
+
+<body>
+    <!--Nav-->
+    <nav>
+        <div class="container">
+            <a href="index.html"><img src="./images/rtn.png" alt=""></a>
+        </div>
+    </nav>
+    <!--Nav-->
+
+    <!--Main-->
+    <main>
+        <div class="container">
+
+            <div class="row">
+                <div class="column1" style="margin-top: 30px;">
+                    <img src="./images/image-product-1.jpg" alt="">
+                    <h6 id="company"></h6>
+                    <h1 id="itemName">
+                    </h1>
+                    <div id="price">
+                    </div>
+
+                </div>
+                <div class="column2">
+
+                    <div id="formBG">
+                        <h2>Make Payment</h2>
+                        <form onsubmit="return myForm()">
+                            <table style="border-spacing: 5px; margin-top: 20px;">
+                                <tr>
+                                    <td class="name" colspan="2">
+                                        <input type="text" id="fname" placeholder="first name" />
+                                        <input type="text" id="lname" placeholder="last name" />
+                                        <br>
+                                        <div id="name_validate">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <input type="email" id="email" placeholder="Email" />
+                                        <br>
+                                        <div id="email_validate">
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td colspan="2">
+                                        <input type="text" id="pnum" placeholder="Phone Number" />
+                                        <br>
+                                        <div id="pnum_validate">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <div id="line"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <br><br>
+                                        <input type="number" id="cardNum" placeholder="Card Number" />
+                                        <br>
+                                        <div id="cardNum_validate">
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td colspan="2" class="cardD">
+                                        <input type="text" id="date" placeholder="MM/YY" />
+                                        <input type="number" id="cvv" placeholder="CVV" />
+                                        <input type="number" id="zip" placeholder="Zip" />
+                                        <br>
+                                        <div id="details_validate">
+                                        </div>
+
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td colspan="2">
+                                        <input type="text" id="cardName" placeholder="Card Name" />
+                                        <br>
+                                        <div id="cardName_validate">
+                                        </div>
+
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td colspan="2">
+                                        <button type="submit">
+                                            submit
+                                        </button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                    <!--Popup  onclick="openForm()"-->
+                    <div id="popup">
+                        <div class="mypopup" onclick="closeForm()">
+                            <div class="box" id="box">
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.Popup-->
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--/.Main-->
+    
+</body>
+
+</html>

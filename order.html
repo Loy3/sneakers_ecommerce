@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <title>E-commerce product page</title>
+
+    <link rel="stylesheet" href="./styles/checkout_style.css">
+
+    <script src="./js/order_js.js"></script>
+</head>
+
+<body>
+    <!--Nav-->
+    <nav>
+        <div class="container">
+            <a href="index.html"><img src="./images/rtn.png" alt=""></a>
+        </div>
+    </nav>
+    <!--Nav-->
+
+    <!--Main-->
+    <main>
+        <div class="container">
+
+            <div class="row">
+                <div class="column1" style="margin-top: 30px;">
+                    <img src="./images/image-product-1.jpg" alt="">
+
+                    <h6 id="company"></h6>
+                    <h1 id="itemName">
+                    </h1>
+                    <div id="price">
+                    </div>
+
+                    
+
+                </div>
+                <div class="column2">
+
+                    <h3 id="title"> </h3>
+
+                   <div class="row">
+                    <div class="column">
+                        <div class="card" id="card1" onclick="viewOrderMsg(1)">
+                        </div>
+                    
+                        <div class="card" id="card2" onclick="viewOrderMsg(2)">
+                        
+                        </div>
+                
+                        <div class="card" id="card3" onclick="viewOrderMsg(3)">
+                       
+                        </div>
+                        <div class="card" id="card4" onclick="viewOrderMsg(4)">
+                       
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="card" id="card5">
+                        
+                        </div> 
+                    </div>
+                   </div>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--/.Main-->
+</body>
+
+</html>

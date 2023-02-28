@@ -1,0 +1,380 @@
+/*Imports*/
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap');
+
+/*Imports*/
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+
+    margin-bottom: 5px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/*Body*/
+body {
+    background-color: hsl(0, 0%, 100%);
+    margin: 0;
+
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.container {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/*Body*/
+
+/*nav*/
+nav {
+    padding-top: 20px;
+}
+
+nav img {
+    width: 40px;
+}
+nav img:hover {
+    width: 42px;
+}
+
+/*nav*/
+
+/*Header*/
+header {
+    background-image: url("/images/image-product-2.jpg");
+    background-size: cover;
+    height: 30vh;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+
+    box-shadow: 5px 10px 20px #552f1a71;
+}
+
+.bgText {
+    position: absolute;
+    color: white;
+}
+
+.bgBlock {
+    width: 100%;
+    padding: 40px;
+    background-color: #2b180e;
+    opacity: 0.7;
+
+    text-align: center;
+    height: 58%;
+}
+
+header h1 {
+    margin: 10px 0;
+    font-size: 35px;
+    color: hsl(0, 0%, 100%);
+}
+
+/*Header*/
+
+
+/*Main*/
+
+.row {
+    margin: 0 -5px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column1 {
+    float: left;
+    width: 30%;
+    padding: 0 10px;
+    padding-bottom: 20px;
+}
+
+.column2 {
+    float: left;
+    width: 65%;
+    padding: 0 10px;
+    padding-bottom: 20px;
+}
+
+
+h6 {
+    color: hsl(26, 100%, 55%);
+    margin: 0;
+}
+
+h1 {
+    margin: 10px 0;
+    font-size: 30px;
+    color: hsl(220, 13%, 13%);
+}
+h2{
+    margin: 10px 0;
+    font-size: 35px;
+    color: hsl(220, 13%, 13%);
+}
+
+h4{
+    margin: 0px 0;
+    font-size: 20px;
+    color: hsl(220, 13%, 13%);
+}
+
+.paragraph {
+    color: hsl(219, 9%, 45%);
+    font-size: 16px;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+main img {
+    width: 90%;
+    margin-bottom: 20px;
+    box-shadow: 5px 10px 20px hsla(26, 100%, 55%, 0.432);
+}
+
+#price {
+    margin-top: 24px;
+    font-size: 24px;
+    color: hsla(26, 100%, 55%, 0.856);
+    font-weight: bold;
+}
+
+
+
+#formBG {
+   
+    width: 100%;
+    padding: 0px 20px;
+    padding-left: 50px;
+   
+}
+
+form {
+    width: 100%;
+}
+
+input {
+    height: 35px;
+}
+
+#line {
+    width: 100%;
+    display: block;
+   margin-top: 20px;
+    border-bottom: 2px solid hsl(220, 14%, 75%);
+    
+}
+
+.name input {
+    width: 47%;
+}
+
+.cardD input {
+    width: 30%;
+}
+
+input {
+    padding: 0px 0px 0px 10px;
+    width: 97%;
+    font-size: 14px;
+    background-color: transparent;
+    color:hsl(26, 100%, 55%);
+    border: 2px solid hsl(26, 100%, 55%);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+textarea {
+    padding: 10px;
+}
+
+#name_validate,
+#email_validate,
+#pnum_validate,
+#cardNum_validate,
+#details_validate,
+#cardName_validate {
+    margin-top: 10px;
+    font-size: 12px;
+    color: red;
+}
+
+button {
+    width: 130px;
+    height: 35px;
+    font-size: 16px;
+    background-color: transparent;
+    color: hsl(26, 100%, 55%);
+    border: 2px solid hsl(26, 100%, 55%);
+    font-weight: bold;
+}
+
+button:hover {
+    background-color:hsl(26, 100%, 55%);
+    color: #f7f0d9;
+    border: 2px solid hsl(26, 100%, 55%);
+}
+
+
+
+.box {
+    background-color: #fcf9ee;
+    top: 25%;
+    width: 450px;
+    height: 250px;
+    position: fixed;
+    z-index: 99;
+    padding: 30px;
+}
+
+
+#popup {
+    display: none;
+    height: 90%;
+
+}
+
+.mypopup {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(19, 19, 19, 0.788);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+
+}
+
+.mypopup a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.mypopup a:hover {
+    color: #f1f1f1;
+}
+
+.mypopup .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/*Style for order*/
+#title{
+    margin:50px 0 20px 0;
+    
+    color: hsl(220, 13%, 13%);
+}
+#title h4{
+    color: hsl(26, 100%, 55%);
+}
+
+.stat h4{
+    font-size: 10px;
+}
+.card{
+    cursor: pointer;
+    width: 90%;
+    background-color: hsl(25, 100%, 94%);
+    color: hsl(219, 9%, 45%);
+   margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 5px 10px 20px hsla(26, 100%, 55%, 0.432);
+}
+
+#card5{
+   height: 285px;
+}
+.card:hover{
+    width: 91%;
+}
+
+.column2  .column{
+    float: left;
+    width: 46%;
+    padding: 0 10px;
+    padding-bottom: 20px;
+}
+
+#card5 h4{
+    font-size: 35px;
+}
+/*End of Style for order*/
+
+/*Main*/
+
+
+
+
+/*media*/
+@media screen and (max-width: 600px) {
+    
+    .container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .row{
+        padding: 0;
+    }
+
+    .column1, .column2, .column2  .column {
+        width: 90%;
+    }
+
+   input, .name input, .cardD input{
+    width: 90%;
+   }
+   .name input{
+    margin-top: 10px;
+   }
+   #formBG {
+    padding-left: 5px;
+   }
+   
+   #line{
+    width: 90%;
+    margin-left: 5px;
+   }
+
+   main img {
+    width: 100%;
+   }
+
+   .box {
+    
+    width: 80%;
+   }
+}
+
+/*end of media*/

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+  <title>E-commerce product page</title>
+
+  <link rel="stylesheet" href="./styles/index_style.css">
+
+  <script src="./js/index_js.js"></script>
+</head>
+
+<body>
+
+  <!--Nav-->
+  <nav>
+    <div id="navi"></div>
+    <div class="container">
+
+      <div class="topnav" id="myTopnav">
+        <div class="nav">
+          <a id="logo">sneakers</a>
+          <a class="navTxt" title="Collections">Collections</a>
+          <a class="navTxt" title="Men">Men</a>
+          <a class="navTxt" title="Women">Women</a>
+          <a class="navTxt">About</a>
+          <a class="navTxt">Contact</a>
+
+          <a href="#" class="icon" onclick="myFunction()" id="icon">
+          </a>
+        </div>
+        <div class="topnav-right" id="topnav-right">
+          <button onclick="openForm()"><img src="./images/icon-cart.svg" alt="cart" >
+            <span id="cart">0</span>
+          </button>
+          <button id="navPr">
+            <img src="./images/image-avatar.png" alt="profile">
+          </button>
+        </div>
+        <div id="line"></div>
+      </div>
+      <!--Popup-->
+      <div id="popup">
+        <div class="mypopup" onclick="closeForm()">
+          <div class="box" id="box">
+
+          </div>
+        </div>
+      </div>
+      <!--/.Popup-->
+    </div>
+  </nav>
+  <!--/.Nav-->
+
+
+  <!--Main-->
+  <main>
+    <div class="container">
+      <div class="row">
+        <!--Images-->
+        <div class="column">
+          <div id="images">
+            <div class="test" id="test">
+              <img id="expandedImg" class="mainImg" onclick="openPop(this)">
+              <button onclick="prev()" class="btn1"><img src="./images/icon-previous.svg" alt=""
+                  class="img"></button>
+              <button onclick="next()" class="btn2"><img src="./images/icon-next.svg" alt=""
+                  class="img"></button>
+            </div>
+
+            <div id="smallImg" align="center">
+              <table>
+                <tr>
+                  <td><img src="./images/image-product-1-thumbnail.jpg" alt="" onclick="viewImg(1);" id="prod1"></td>
+                  <td><img src="./images/image-product-2-thumbnail.jpg" alt="" onclick="viewImg(2);" id="prod2"></td>
+                  <td><img src="./images/image-product-3-thumbnail.jpg" alt="" onclick="viewImg(3);" id="prod3"></td>
+                  <td><img src="./images/image-product-4-thumbnail.jpg" alt="" onclick="viewImg(4);" id="prod4"></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <!--/.Images-->
+
+        <!--Pop up-->
+        <div id="wrap">
+          <div id="showBG">
+            <div id="showImg" class="showImg">
+              <div id="viewingImg">
+                <div class="test" id="viewTest">
+                  <input type="submit" value="x" alt="" class="closebtn" onclick="closePop()">
+                  <img id="showMyImg" class="mainImg">
+                  <button onclick="prev2()" style="margin-left: -160px;"><img src="./images/icon-previous.svg" alt=""
+                      class="img"></button>
+                  <button onclick="next2()" style="margin-left: 290px;"><img src="./images/icon-next.svg" alt=""
+                      class="img"></button>
+                </div>
+
+                <div id="smallImg" align="center">
+                  <table >
+                    <tr>
+                      <td><img src="./images/image-product-1-thumbnail.jpg" alt="" onclick="showImg(1);" id="pop_prod1"></td>
+                      <td><img src="./images/image-product-2-thumbnail.jpg" alt="" onclick="showImg(2);" id="pop_prod2"></td>
+                      <td><img src="./images/image-product-3-thumbnail.jpg" alt="" onclick="showImg(3);" id="pop_prod3"></td>
+                      <td><img src="./images/image-product-4-thumbnail.jpg" alt="" onclick="showImg(4);" id="pop_prod4"></td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--/.Pop up-->
+
+        <!--Text-->
+        <div class="column">
+          <div id="content">
+            <h6 id="company"></h6>
+            <h1 id="itemName"></h1>
+
+            <p class="paragraph" id="paragraph">
+            </p>
+
+            <div id="price">
+              <p><span class="itmPrice"><span id="myPrice"></span></span> <span class="disc" id="disc"></span>
+                <span class="ogp" id="ogp">
+                  
+                </span>
+              </p>
+              
+            </div>
+
+            <div id="buttons">
+              <div class="row">
+                <div class="column1">
+                  <table>
+                    <tr>
+                      <td><button onclick="subt()"><img src="./images/icon-minus.svg" alt=""></button></td>
+                      <td><span id="quant"></span></td>
+                      <td><button onclick="add()"><img src="./images/icon-plus.svg" alt=""></button></td>
+                    </tr>
+                  </table>
+                </div>
+
+                <div class="column2">
+                  <div class="add">
+                    <button onclick="addtocart()"><img src="./images/icon-cart.png" alt="" width="15"
+                        style="margin-right: 10px; margin-top: 5px;"> Add to cart </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/.Text-->
+      </div>
+
+    </div>
+  </main>
+  <!--/.Main-->
+
+  <br><br>
+  <!--Footer-->
+  <footer>
+    <hr>
+    <div class="container">
+      <div class="attribution">
+        Bootcamp 2023 by
+        <a href="https://www.mlab.co.za" target="_blank">CodeTribe</a>.
+        <br> Developed
+        by <a href="https://theoneaboutloy.web.app/" target="_blank">Loy Netshiozwi</a>.
+      </div>
+    </div>
+  </footer>
+  <!--Footer-->
+</body>
+
+</html>
+
+<!-- Source Frontend Mentor: https://www.frontendmentor.io -->
